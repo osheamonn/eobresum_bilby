@@ -18,9 +18,9 @@ Example:
 
 ``` python 
 kwargs = {'ode_abstol': 1e-10, 
-             'ode_reltol': 1e-9, 
-              'use_mode_lm': [1] #(2,2) mode
-              }
+          'ode_reltol': 1e-9, 
+          'use_mode_lm': [1] #(2,2) mode
+          }
 
 hp, hx = time_domain_eob_resum(dt = 2048., minimum_frequency=15, mass_1=30., mass_2=30, eccentricity=0.1, luminosity_distance=500, theta_jn = 0., phase=0., 
                               chi_1 = 0.1, chi_2 = -0.2, **kwargs)
